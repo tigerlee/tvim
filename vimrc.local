@@ -1,0 +1,19 @@
+set nocursorline " don't highlight current line
+
+" keyboard shortcuts
+inoremap jj <ESC>
+
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+syntax enable
+set background=dark
+"colorscheme solarized
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o,*.d,*.tgz
+
+" Fast saving
+nmap <leader>x :xa!<cr>
+nmap <leader>w :w!<cr>
+nmap <leader>p :bp<cr>
+nmap <leader>n :bn<cr>
+
