@@ -7,12 +7,12 @@ PWD=`pwd`
 git submodule init
 git submodule update
 
-ln -s $PWD/.vim ~/.vim
-ln -s $PWD/.vimrc ~/.vimrc
-ln -s $PWD/.vimrc.local ~/.vimrc.local
-ln -s $PWD/.vimrc.bundles ~/.vimrc.bundles
-ln -s $PWD/.vimrc.bundles.local ~/.vimrc.bundles.local
+ln -s $PWD/vim ~/.vim
+ln -s $PWD/vimrc ~/.vimrc
+ln -s $PWD/vimrc.local ~/.vimrc.local
+ln -s $PWD/vimrc.bundles ~/.vimrc.bundles
+ln -s $PWD/vimrc.bundles.local ~/.vimrc.bundles.local
 
-vim +BundleInstall +qall!
+vim +PluginInstall +qall!
 
 echo "Installation done, Enjoy it!"
